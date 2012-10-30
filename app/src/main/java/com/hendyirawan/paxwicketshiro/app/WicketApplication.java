@@ -15,7 +15,7 @@ public class WicketApplication extends WebApplication {
 		AnnotationsShiroAuthorizationStrategy authz = new AnnotationsShiroAuthorizationStrategy();
 		getSecuritySettings().setAuthorizationStrategy(authz);
 		getSecuritySettings().setUnauthorizedComponentInstantiationListener(
-				new ShiroUnauthorizedComponentListener(LoginPage.class, AccesDeniedPage.class, authz));
+				new ShiroUnauthorizedComponentListener(LoginPage.class, AccessDeniedPage.class, authz));
 
 		mountPage("login", LoginPage.class);
 		mountPage("secure", SecuredPage.class);
