@@ -1,0 +1,16 @@
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:wicket="http://www.ops4j.org/schema/wicket"
+    xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+		
+<!-- 	<wicket:application id="l10n" -->
+<!-- 		class="com.hendyirawan.paxwicketl10n.app.L10nApplication" -->
+<!-- 		applicationName="l10n" mountPoint="l10n"> -->
+<!-- 		<wicket:context-param> -->
+<!-- 			<wicket:param-name>configuration</wicket:param-name> -->
+<!--     		<wicket:param-value>development</wicket:param-value> -->
+<!--     		<wicket:param-value>deployment</wicket:param-value> -->
+<!-- 		</wicket:context-param> -->
+<!-- 	</wicket:application> -->
+
+</blueprint>

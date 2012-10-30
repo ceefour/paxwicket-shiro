@@ -1,0 +1,29 @@
+h1. Pax Wicket integration with Apache Shiro Security Sample
+
+Inspired by Bram Pouwelse's https://github.com/brampouwelse/org.ops4j.pax.wicket/tree/master/samples/apache-shiro
+
+h2. Building & Running
+
+1. Install Pax Wicket in Karaf:
+
+   @features:addurl mvn:org.ops4j.pax.wicket/features/1.1.1/xml/features@
+   @features:install -v wicket-spring@
+
+2. Install Shiro in Karaf
+
+   @features:addurl mvn:org.apache.shiro/shiro-features/1.2.1/xml/features@
+   @features:install -v shiro-web shiro-spring@
+
+3. Install wicketstuff-shiro in Karaf
+
+	@install wrap:mvn:org.wicketstuff/wicketstuff-shiro/1.5.8@
+
+4. Build the project using @mvn install@ or by importing to Eclipse
+5. Deploy the bundle @com.hendyirawan.paxwicketshiro.app@ to Karaf
+6. Test by visiting: http://localhost:8181/pwshiro/
+
+h2. Credentials
+
+1. bush : president
+2. ban ki-moon : nato
+3. balkenende : h.potter
